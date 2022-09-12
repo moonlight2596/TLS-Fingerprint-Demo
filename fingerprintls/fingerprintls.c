@@ -230,7 +230,7 @@ int main(int argc, char **argv) {
 	/* This needs to be before the priv drop in case the fingerprint db requires root privs to read */
 	if(fpdb_fd == NULL) {
 		/* No filename set, trying the current directory */
-		if((fpdb_fd = fopen("tlsfp.db", "r")) == NULL) {
+		if((fpdb_fd = fopen("tlsfp3.db", "r")) == NULL) {
 			printf("Cannot open fingerprint database file (try -f)\n");
 			printf("(This is a new feature, tlsfp.db should be in the source code directory)\n");
 			exit(-1);

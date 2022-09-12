@@ -23,7 +23,7 @@ def byte_to_bin(in_string):
 	in_string = in_string.replace(' ', '')
 	in_string = in_string.replace('0x', '')
 	out_string = binascii.a2b_hex(in_string)
-  	return out_string
+	return out_string
 
 
 def cleanse(filename):
@@ -417,7 +417,7 @@ def binary(filename):
 
 
 	# Write the version before we itterate through the fingerprints
-	outfile = open("tlsfp.db","w+")
+	outfile = open("tlsfp3.db","w+")
 	outfile.write(byte_to_bin("0x00"))
 
 	# Open the JSON file and process each entry (line)

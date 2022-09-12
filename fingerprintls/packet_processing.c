@@ -685,7 +685,7 @@ void got_packet(u_char *args, const struct pcap_pkthdr *pcap_header, const u_cha
 					print_log(printable_time, server_name, ip_version, ipv4, ipv6, tcp, udp, teredo, fp_nav);
 
 					/* In theory multiple matches were not possible, now with padding stripping they are. */
-					/* Therefore forbibly exiting the for loop here.  Should also make things faster as   */
+					/* Therefore forcibly exiting the for loop here.  Should also make things faster as   */
 					/* we no longer test the remainder of the chain after a match                         */
 					break;
 
